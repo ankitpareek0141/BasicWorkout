@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F4D4A4"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Basic Workout"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:textColor="#FF5722" />
+
+    <Button
+        android:id="@+id/seeAllPlans"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="See your plans"
+        android:textColor="@color/cardview_light_background"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="140dp"
+        android:textSize="20sp"
+        android:background="@drawable/custom_buttton"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/dailyWorkout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="daily workouts"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        android:layout_below="@+id/seeAllPlans"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_buttton"/>
+
+    <Button
+        android:id="@+id/aboutUs"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_light_background"
+        android:text="about us"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/dailyWorkout"
+        android:background="@drawable/custom_buttton"/>
+</RelativeLayout>

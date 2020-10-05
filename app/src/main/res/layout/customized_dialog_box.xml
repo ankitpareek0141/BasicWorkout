@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much time you want to do this this?"
+        android:id="@+id/textViewTime"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:inputType="number"
+        android:layout_below="@+id/textViewTime"
+        android:id="@+id/minutes"
+        android:maxLength="2"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="minutes"
+        android:textSize="20sp"
+        android:layout_below="@+id/textViewTime"
+        android:layout_toRightOf="@id/minutes"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/textViewDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/minutes"
+        android:text="How many days you want to do this?"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDays"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Add"
+        android:id="@+id/ok"
+        android:layout_below="@+id/spinner"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Cancel"
+        android:id="@+id/cancel"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"/>
+</RelativeLayout>

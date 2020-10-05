@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedcScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mondayLayout"
+                android:background="#9CE3EC"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/mondayEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Edit"
+                    android:onClick="onClick"
+                    android:textSize="20sp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recViewMonday"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/monday"
+                    android:layout_marginTop="2dp" />
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tuesdayLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mondayLayout"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:background="#C7EF98">
+
+                <TextView
+                    android:id="@+id/tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tuesdayEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Edit"
+                    android:onClick="onClick"
+                    android:textSize="20sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recViewTuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tuesday" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/wednesdayLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tuesdayLayout"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:background="#E0A4EA">
+
+                <TextView
+                    android:id="@+id/wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/wednesdayEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Edit"
+                    android:onClick="onClick"
+                    android:textSize="20sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recViewWednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wednesday" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/thursdayLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wednesdayLayout"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:background="#F3ABA6">
+
+                <TextView
+                    android:id="@+id/thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/thursdayEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Edit"
+                    android:onClick="onClick"
+                    android:textSize="20sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recViewThursday"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/thursday" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fridayLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thursdayLayout"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:background="#EDD68F">
+
+                <TextView
+                    android:id="@+id/friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/fridayEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Edit"
+                    android:onClick="onClick"
+                    android:textSize="20sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recViewFriday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@id/friday"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/saturdayLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fridayLayout"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:background="#EF9FBA">
+
+                <TextView
+                    android:id="@+id/saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/saturdayEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Edit"
+                    android:onClick="onClick"
+                    android:textSize="20sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recViewSaturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@id/saturday"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/sundayLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/saturdayLayout"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:background="#B1BCF6">
+
+                <TextView
+                    android:id="@+id/sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunday"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/sundayEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Edit"
+                    android:onClick="onClick"
+                    android:textSize="20sp"
+                    tools:ignore="OnClick" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recViewSunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@id/sunday" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noPlanAddedRelLayout"
+        android:visibility="gone">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/textView"
+        android:text="Seems like doesn't have any plans, so go and set one..."
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Plan"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="emptyFun"
+        android:id="@+id/addPlan"/>
+    </RelativeLayout>
+</RelativeLayout>

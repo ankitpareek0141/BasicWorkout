@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BasicWorkout</string>
+    <string name="aboutUs">This is the Gym Management Application where you can schedule your exercise by adding on basis of time and on the day, you just
+    need to go All Exercise and click on anyone and then add to plan and navigate to the added item in the See your plan section.<br></br> You can remove the added item also.</string>
+</resources>
